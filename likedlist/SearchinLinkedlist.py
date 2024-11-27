@@ -75,4 +75,4 @@ print([node.value for node in single])
 
 # Transverse the list
 single.transverse()
-print(single.search(9))
+print(single.search(6))

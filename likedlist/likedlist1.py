@@ -15,8 +15,7 @@ class SLinkd_list:
         while node:
             yield node
             node=node.next
-    def insertSLL(self,value,location):
-        newNode=Node(value)
+    
         
 
 singleLinkedlist=SLinkd_list()
