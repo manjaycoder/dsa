@@ -8,15 +8,15 @@ class Node:
         self.next=None
 class SLinkd_list:
     def __init__(self):
-        self.head=None;
+        self.head=None
         self.tail=None
-    def __init__(self):
+    def __iter__(self):
         node=self.head
         while node:
             yield node
             node=node.next
     
-        
+
 
 singleLinkedlist=SLinkd_list()
 print([node.value for node in singleLinkedlist])

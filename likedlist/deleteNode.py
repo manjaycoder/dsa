@@ -77,7 +77,7 @@ class SLinkd_list:
                     self.tail = None
                 else:
                     self.head = self.head.next  # Update head to the next node
-            elif location == 1:  # Deleting the tail (last node)
+            elif location == -1:  # Deleting the tail (last node)
                 if self.head == self.tail:  # Only one node in the list
                     self.head = None
                     self.tail = None
@@ -118,5 +118,3 @@ print([node.value for node in single])
 
 
 single.transverse()
-# Search for a node with value 6
-
