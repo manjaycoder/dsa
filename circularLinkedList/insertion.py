@@ -31,7 +31,7 @@ class CircularSLL:
                 newNode.next=self.tail.next
                 self.tail=newNode
             else:
-                tempNode=Node(value)
+                tempNode=self.head
                 index=0
                 while index < location -1:
                     tempNode=tempNode.next
@@ -42,6 +42,7 @@ class CircularSLL:
 
 C1=CircularSLL()
 C1.creation(1)
+
 C1.insert(1,0)
 C1.insert(2,1)
 C1.insert(3,2)
