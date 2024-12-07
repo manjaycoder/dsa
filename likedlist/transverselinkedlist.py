@@ -47,7 +47,15 @@ class SLinkd_list:
                 print(node.value, end=" -> ")
                 node = node.next
             print("None")  # End of list
-
+    def recurve_list(self,head):
+        node=None
+        while head:
+            temp=head.next
+            head.next=node
+            node=head
+            head=temp
+        return node
+            
 # Testing the code
 single = SLinkd_list()
 single.insert(1, 1)

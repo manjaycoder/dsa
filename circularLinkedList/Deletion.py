@@ -10,11 +10,12 @@ class CircularSLL:
     
     def __iter__(self):
         node = self.head
-        while node:
-            yield node
-            if node.next == self.head:
-                break
-            node = node.next
+        if node:
+            while True:
+                yield node
+                node = node.next
+                if node == self.head:  # Stop if we have looped back to the head
+                    break
     
     def creation(self, node_value):
         new_node = Node(node_value)
@@ -44,7 +45,7 @@ class CircularSLL:
             temp_node = self.head
             index = 0
             # Traverse to the correct position
-            while index < location - 1:
+            while index < location - 1 and temp_node.next != self.head:
                 temp_node = temp_node.next
                 index += 1
             
@@ -67,15 +68,55 @@ class CircularSLL:
     
     def search(self, nodeValue):
         if self.head is None:
-            return "There is not ant node"
+            return "The list is empty."
         else:
-            tempNode=self.head
-            while tempNode:
-                if tempNode.value==nodeValue:
-                    return tempNode.value
-                tempNode=tempNode.next
-                if tempNode == self.tail.next:
-                    return "the linked list is empty"
+            temp_node = self.head
+            while temp_node:
+                if temp_node.value == nodeValue:
+                    return temp_node.value
+                temp_node = temp_node.next
+                if temp_node == self.head:
+                    break
+            return "Node not found"
+            
+    def deletion(self, location):
+        if self.head is None:
+            return "The list is empty."
+        
+        # Deleting the head node
+        if location == 0:
+            if self.head == self.tail:  # Only one node
+                self.head = None
+                self.tail = None
+            else:
+                self.head = self.head.next
+                self.tail.next = self.head  # Update tail next to head
+        
+        # Deleting the tail node
+        elif location == 1:
+            if self.head == self.tail:  # Only one node
+                self.head = None
+                self.tail = None
+            else:
+                temp_node = self.head
+                while temp_node.next != self.tail:
+                    temp_node = temp_node.next
+                temp_node.next = self.head
+                self.tail = temp_node
+        
+        # Deleting a node at a specific position
+        else:
+            temp_node = self.head
+            index = 0
+            while index < location - 1 and temp_node.next != self.head:
+                temp_node = temp_node.next
+                index += 1
+            
+            # Deletion only if the node exists
+            if temp_node.next != self.head:
+                temp_node.next = temp_node.next.next
+            else:
+                return "Invalid location"
 
 # Example usage:
 C1 = CircularSLL()
@@ -85,13 +126,12 @@ C1.insert(1, 0)  # Insert 1 at the beginning
 C1.insert(2, 1)  # Insert 2 at the end
 C1.insert(3, 2)  # Insert 3 at the end
 C1.insert(4, 3)  # Insert 4 at the end
-print(C1.search(3))
-# Searching for a value
-# print(C1.search(4))  # Should return 4
-# print(C1.search(10))  # Should return "The node does not exist in the list."
+
+print(C1.search(3))  # Searching for a node with value 3
+print(C1.search(5))  # Searching for a non-existent node
 
 # Transversing the list
-# C1.transverse()
+C1.transverse()
 
 # Using iteration (list comprehension)
 print([node.value for node in C1])
