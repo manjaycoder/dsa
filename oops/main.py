@@ -47,3 +47,10 @@ print(isinstance(C1,ElectronicCar))
 
 # c1=Car('tata','motor')
 # print(c1.FullName())
+
+totalSum=0
+currMaxSum=0
+currMinSum=0
+maxSum=arr[0]
+minSum=arr[0]
+for i in range(len(arrJKLDDDFRIUO8U9OU,9LIJKU,9IOLUJED,KUJ

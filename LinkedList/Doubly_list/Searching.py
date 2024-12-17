@@ -42,13 +42,21 @@ class DoublySLL:
             newNode.prev=tempNode
             newNode.prev.next=newNode
             tempNode.next=newNode
-            
-            
-            
+    def Searching(self,value):
+        if self.head is None:
+            priint("the linked list is empty")
+        else:
+            tempNode=self.head
+            while tempNode:
+                if tempNode.value == value:
+                    return tempNode.value 
+                tempNode=tempNode.next
+            return "the linked list etiem is not present"
 
 D1=DoublySLL()
 D1.createSLL(1)
 D1.insertion(2,0)
 D1.insertion(2,1)
 D1.insertion(3,2)
+print(D1.Searching(3))
 print([node.value for node in D1])

@@ -104,6 +104,17 @@ class SLinkd_list:
         else:
             self.head=None
             self.tail=None
+            
+    def duplicate(self):
+        node=self.head
+        while node is not None:
+            if node.value == node.next.value:
+                node.next=node.next.next
+            else:
+                node=node.next
+                tail=node
+                tail.next=None
+            
 # Testing the code
 single = SLinkd_list()
 single.insert(1, 1)  # Insert 1 at the end
@@ -116,8 +127,7 @@ single.insert(6, 1)  # Insert 6 at the end
  # Delete the second node
 
 # Print all node values in the list
-single.delete(2) 
-single.deleteentire()
+single.duplicate()
 print([node.value for node in single])
 
 # Transverse the list and print all nodes
