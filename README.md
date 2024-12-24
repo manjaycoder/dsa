@@ -13,7 +13,7 @@ This course covers the following key topics:
 
 ### **2. Fundamental Data Structures**
 - **Arrays**
-- **Linked Lists** (Singly, Doubly)
+- **Linked Lists** (Singly, Doubly,Circular, DoubleCircular)
 - **Stacks**
 - **Queues**
 - **Hash Tables**
