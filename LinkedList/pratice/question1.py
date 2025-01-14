@@ -1,28 +1,19 @@
 from linkedlist import LinkedList
-
-def remove_duplicate(ll):
+def dulicate(ll):
     if ll.head is None:
-        return
+        return "the linked list is None exist"
     else:
-        currentNode = ll.head
-        visited = set([currentNode.value])  # Keep track of visited node values
-        while currentNode.next:
-            if currentNode.next.value in visited:
-                # Skip the duplicate node
-                currentNode.next = currentNode.next.next
+        CurrNode=ll.head
+        visited=set([CurrNode.value])
+        while CurrNode.next:
+            if CurrNode.next.value in visited:
+                CurrNode.next=CurrNode.next.next
             else:
-                # Add the value to the visited set and move forward
-                visited.add(currentNode.next.value)
-                currentNode = currentNode.next
-    return ll  # Ensure to return the linked list after removing duplicates
-
-# Test the function
-C1 = LinkedList()
-C1.generate(10, 1, 9)  # Generates a linked list with 10 random values between 1 and 9
-print("Original Linked List:")
-print(C1)
-
-remove_duplicate(C1)
-
-print("Linked List After Removing Duplicates:")
-print(C1)
+                visited.add(CurrNode.next.value)
+                CurrNode=CurrNode.next
+        return ll
+Custom=LinkedList()
+Custom.generate(10,0,9)
+print(Custom)
+dulicate(Custom)
+print(Custom)

@@ -3,7 +3,7 @@ class Node:
         self.value = value
         self.next = None
 
-class SLinkd_list:
+class SingleList:
     def __init__(self):
         self.head = None
         self.tail = None
@@ -14,29 +14,39 @@ class SLinkd_list:
             yield node
             node = node.next
 
-    def insert(self, value, location):
+    def insertSLL(self, value, location):
         newNode = Node(value)
-
-        if self.head is None:  # If the list is empty
+        if self.head is None:  # Empty list
             self.head = newNode
             self.tail = newNode
-        elif location == 0:  # Insert at the beginning
-            newNode.next = self.head
-            self.head = newNode
-        else:  # Insert at the end (location >= 1)
-            if self.tail is not None:
+        else:
+            if location == 0:  # Insert at the beginning
+                newNode.next = self.head
+                self.head = newNode
+            elif location == -1:  # Insert at the end
                 self.tail.next = newNode
                 self.tail = newNode
+            else:  # Insert at a specific location
+                tempNode = self.head
+                index = 0
+                while index < location - 1 and tempNode.next:  # Traverse to the desired position
+                    tempNode = tempNode.next
+                    index += 1
+                nextNode = tempNode.next
+                tempNode.next = newNode
+                newNode.next = nextNode
+                if newNode.next is None:  # Update tail if new node is at the end
+                    self.tail = newNode
 
-# Create the linked list and insert values
-single = SLinkd_list()
-single.insert(1, 1)
-single.insert(2, 1)
-single.insert(3, 1)
-single.insert(4, 1)
-single.insert(5, 1)
-single.insert(0, 0)
-single.insert(6, 1)
+# Testing the SingleList implementation
+custom = SingleList()
 
-# Print all the values in the linked list
-print([node.value for node in single])
+# Insert nodes into the list
+custom.insertSLL(2, 0)   # Insert at the beginning
+custom.insertSLL(1, 0)   # Insert at the beginning again
+custom.insertSLL(3, -1)  # Insert at the end
+custom.insertSLL(1, 2)   # Insert at position 2
+custom.insertSLL(4, -1)  # Insert at the end again
+
+# Print the linked list values
+print([node.value for node in custom])

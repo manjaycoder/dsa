@@ -32,3 +32,5 @@ class Queue:
             return True
         else:
             return False
+    def peek(self):
+        return self.Linked.head.value

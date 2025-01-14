@@ -1,87 +1,93 @@
 class Queue:
-    def __init__(self,maxSize):
-        self.items=maxSize * [None]
-        self.maxSize=maxSize
-        self.top=-1
-        self.start=-1
+    def __init__(self, maxSize):
+        # Initialize the queue with a fixed size
+        self.items = maxSize * [None]  # Pre-allocate the list with None values
+        self.maxSize = maxSize  # Set the maximum size of the queue
+        self.top = -1  # Pointer to the most recently added item
+        self.start = -1  # Pointer to the front of the queue
+
     def __str__(self):
-        values=[str(x) for x in self.items]
-        return ' '.join(values)
+        # Convert queue items to a string representation
+        values = [str(x) for x in self.items]  # Convert each item to string
+        return ' '.join(values)  # Join all strings with a space
+
     def isFull(self):
-        if self.top+1==self.start:
+        # Check if the queue is full
+        if self.top + 1 == self.start:  # Case when queue is full in circular mode
             return True
-        elif self.start == 0 and self.top+1 == self.maxSize:
+        elif self.start == 0 and self.top + 1 == self.maxSize:  # Queue wraps around and reaches the start
             return True
         else:
             return False
+
     def isEmpty(self):
-        if self.top == -1:
+        # Check if the queue is empty
+        if self.top == -1:  # Queue is empty when top is -1
             return True
         else:
             return False
-    def enque(self,value):
-        def enque(self, value):
-            """
-            Enqueues a value into the queue.
 
-            This method inserts a value into the queue if the queue is not full. 
-            It handles the circular nature of the queue by wrapping around when 
-            the end of the queue is reached.
-
-            Parameters:
-            value: The value to be inserted into the queue.
-
-            Returns:
-            str: A message indicating whether the value was successfully inserted 
-                 or if the queue is full.
-
-            Steps:
-            1. Check if the queue is full using the isFull() method.
-            2. If the queue is full, return a message indicating that the queue is full.
-            3. If the queue is not full:
-                a. Check if the next position is at the end of the queue.
-                b. If it is, wrap around to the beginning of the queue.
-                c. Otherwise, increment the top pointer.
-                d. If the start pointer is -1 (indicating the queue was empty), set it to 0.
-            4. Insert the value at the top position.
-            5. Return a message indicating that the value was successfully inserted.
-            """
-        if self.isFull():
-            return "the queue is fully filled"
+    def enque(self, value):
+        """
+        Add an element to the queue.
+        """
+        if self.isFull():  # Check if the queue is full
+            return "The queue is fully filled"
         else:
-            if self.top+1 == self.maxSize:
-                self.top=0
+            # Handle circular nature of the queue
+            if self.top + 1 == self.maxSize:  # If end of array is reached
+                self.top = 0  # Wrap around to the beginning
             else:
-                self.top += 1
-                if self.start==-1:
-                    self.start=0
-            self.items[self.top]=value
-            return "inserted"
+                self.top += 1  # Increment the top pointer
+
+            # If the queue was empty, update the start pointer
+            if self.start == -1:
+                self.start = 0
+
+            self.items[self.top] = value  # Insert the value at the top position
+            return "Inserted"
+
     def dequeue(self):
-        if self.isEmpty():
-            return "not any element"
+        """
+        Remove and return the front element of the queue.
+        """
+        if self.isEmpty():  # Check if the queue is empty
+            return "Not any element"
         else:
-            firstElement=self.items[self.start]
-            start=self.start
-            if self.start == self.top:
-                self.start=-1
-                self.top=-1
-            elif self.start+1==self.maxSize:
-                self.start=0
+            # Retrieve the first element
+            firstElement = self.items[self.start]
+            start = self.start  # Store the current start position
+
+            # Update pointers based on the current state
+            if self.start == self.top:  # If only one element was in the queue
+                self.start = -1  # Reset to empty state
+                self.top = -1
+            elif self.start + 1 == self.maxSize:  # If start reaches end of array
+                self.start = 0  # Wrap around to the beginning
             else:
-                self.start+=1
-            self.items[start]=None
-            return firstElement
+                self.start += 1  # Move the start pointer forward
+
+            self.items[start] = None  # Clear the dequeued position
+            return firstElement  # Return the dequeued element
+
     def peek(self):
-        if self.isEmpty():
-            return "there is no any element"
+        """
+        View the front element of the queue without removing it.
+        """
+        if self.isEmpty():  # Check if the queue is empty
+            return "There is no any element"
         else:
-            return self.items[self.start]
-            
-custom=Queue(5)
-custom.enque(1)
-custom.enque(2)
-custom.enque(3)
-custom.enque(4)
-print(custom.dequeue())
-print(custom)
+            return self.items[self.start]  # Return the front element
+
+# Example usage of the queue
+custom = Queue(5)  # Create a queue with a maximum size of 5
+custom.enque(1)  # Insert 1 into the queue
+custom.enque(2)  # Insert 2 into the queue
+custom.enque(3)  # Insert 3 into the queue
+custom.enque(4)  # Insert 4 into the queue
+
+# Remove the front element and print it
+print(custom.dequeue())  # Output: 1
+
+# Print the current state of the queue
+print(custom)  # Output: None 2 3 4 None

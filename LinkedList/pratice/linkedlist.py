@@ -63,4 +63,4 @@ class LinkedList:
 # Example usage
 custom_list = LinkedList()
 custom_list.generate(10, 1, 9)
-print(custom_list)
+
