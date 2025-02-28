@@ -60,6 +60,7 @@ This course covers the following key topics:
 ## Hash Table
 |  |
 | ------- |
+| [0217-contains-duplicate](https://github.com/manjaycoder/dsa/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/manjaycoder/dsa/tree/master/0242-valid-anagram) |
 ## String
 |  |
@@ -68,5 +69,10 @@ This course covers the following key topics:
 ## Sorting
 |  |
 | ------- |
+| [0217-contains-duplicate](https://github.com/manjaycoder/dsa/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/manjaycoder/dsa/tree/master/0242-valid-anagram) |
+## Array
+|  |
+| ------- |
+| [0217-contains-duplicate](https://github.com/manjaycoder/dsa/tree/master/0217-contains-duplicate) |
 <!---LeetCode Topics End-->
