@@ -5,11 +5,11 @@ class Solution(object):
         :rtype: List[int]
         """
         
-        result=[]
-        for num in nums:
-            result.append(num)
-        for num in nums:
-            result.append(num)
-        return result
+        n=len(nums)
+        result=[0]*(2*n)
+        for i in range(n):
+            result[i]=nums[i]
+            result[i+n]=nums[i]
+        return result  
 
         
