@@ -60,6 +60,7 @@ This course covers the following key topics:
 ## Hash Table
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/manjaycoder/dsa/tree/master/0001-two-sum) |
 | [0217-contains-duplicate](https://github.com/manjaycoder/dsa/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/manjaycoder/dsa/tree/master/0242-valid-anagram) |
 ## String
@@ -74,6 +75,7 @@ This course covers the following key topics:
 ## Array
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/manjaycoder/dsa/tree/master/0001-two-sum) |
 | [0217-contains-duplicate](https://github.com/manjaycoder/dsa/tree/master/0217-contains-duplicate) |
 | [2058-concatenation-of-array](https://github.com/manjaycoder/dsa/tree/master/2058-concatenation-of-array) |
 ## Simulation
