@@ -82,4 +82,20 @@ This course covers the following key topics:
 |  |
 | ------- |
 | [2058-concatenation-of-array](https://github.com/manjaycoder/dsa/tree/master/2058-concatenation-of-array) |
+## Math
+|  |
+| ------- |
+| [1013-fibonacci-number](https://github.com/manjaycoder/dsa/tree/master/1013-fibonacci-number) |
+## Dynamic Programming
+|  |
+| ------- |
+| [1013-fibonacci-number](https://github.com/manjaycoder/dsa/tree/master/1013-fibonacci-number) |
+## Recursion
+|  |
+| ------- |
+| [1013-fibonacci-number](https://github.com/manjaycoder/dsa/tree/master/1013-fibonacci-number) |
+## Memoization
+|  |
+| ------- |
+| [1013-fibonacci-number](https://github.com/manjaycoder/dsa/tree/master/1013-fibonacci-number) |
 <!---LeetCode Topics End-->
