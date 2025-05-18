@@ -70,6 +70,7 @@ This course covers the following key topics:
 ## Sorting
 |  |
 | ------- |
+| [0075-sort-colors](https://github.com/manjaycoder/dsa/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/manjaycoder/dsa/tree/master/0088-merge-sorted-array) |
 | [0217-contains-duplicate](https://github.com/manjaycoder/dsa/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/manjaycoder/dsa/tree/master/0242-valid-anagram) |
@@ -77,6 +78,7 @@ This course covers the following key topics:
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/manjaycoder/dsa/tree/master/0001-two-sum) |
+| [0075-sort-colors](https://github.com/manjaycoder/dsa/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/manjaycoder/dsa/tree/master/0088-merge-sorted-array) |
 | [0217-contains-duplicate](https://github.com/manjaycoder/dsa/tree/master/0217-contains-duplicate) |
 | [2058-concatenation-of-array](https://github.com/manjaycoder/dsa/tree/master/2058-concatenation-of-array) |
@@ -103,5 +105,6 @@ This course covers the following key topics:
 ## Two Pointers
 |  |
 | ------- |
+| [0075-sort-colors](https://github.com/manjaycoder/dsa/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/manjaycoder/dsa/tree/master/0088-merge-sorted-array) |
 <!---LeetCode Topics End-->
