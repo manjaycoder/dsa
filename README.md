@@ -78,6 +78,7 @@ This course covers the following key topics:
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/manjaycoder/dsa/tree/master/0001-two-sum) |
+| [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/manjaycoder/dsa/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0075-sort-colors](https://github.com/manjaycoder/dsa/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/manjaycoder/dsa/tree/master/0088-merge-sorted-array) |
 | [0217-contains-duplicate](https://github.com/manjaycoder/dsa/tree/master/0217-contains-duplicate) |
@@ -107,4 +108,8 @@ This course covers the following key topics:
 | ------- |
 | [0075-sort-colors](https://github.com/manjaycoder/dsa/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/manjaycoder/dsa/tree/master/0088-merge-sorted-array) |
+## Binary Search
+|  |
+| ------- |
+| [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/manjaycoder/dsa/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 <!---LeetCode Topics End-->
