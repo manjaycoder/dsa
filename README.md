@@ -83,6 +83,7 @@ This course covers the following key topics:
 | [0075-sort-colors](https://github.com/manjaycoder/dsa/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/manjaycoder/dsa/tree/master/0088-merge-sorted-array) |
 | [0217-contains-duplicate](https://github.com/manjaycoder/dsa/tree/master/0217-contains-duplicate) |
+| [1168-duplicate-zeros](https://github.com/manjaycoder/dsa/tree/master/1168-duplicate-zeros) |
 | [2058-concatenation-of-array](https://github.com/manjaycoder/dsa/tree/master/2058-concatenation-of-array) |
 ## Simulation
 |  |
@@ -110,6 +111,7 @@ This course covers the following key topics:
 | [0026-remove-duplicates-from-sorted-array](https://github.com/manjaycoder/dsa/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0075-sort-colors](https://github.com/manjaycoder/dsa/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/manjaycoder/dsa/tree/master/0088-merge-sorted-array) |
+| [1168-duplicate-zeros](https://github.com/manjaycoder/dsa/tree/master/1168-duplicate-zeros) |
 ## Binary Search
 |  |
 | ------- |
