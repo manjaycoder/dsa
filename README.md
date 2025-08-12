@@ -92,10 +92,12 @@ This course covers the following key topics:
 ## Math
 |  |
 | ------- |
+| [0279-perfect-squares](https://github.com/manjaycoder/dsa/tree/master/0279-perfect-squares) |
 | [1013-fibonacci-number](https://github.com/manjaycoder/dsa/tree/master/1013-fibonacci-number) |
 ## Dynamic Programming
 |  |
 | ------- |
+| [0279-perfect-squares](https://github.com/manjaycoder/dsa/tree/master/0279-perfect-squares) |
 | [1013-fibonacci-number](https://github.com/manjaycoder/dsa/tree/master/1013-fibonacci-number) |
 ## Recursion
 |  |
@@ -116,4 +118,8 @@ This course covers the following key topics:
 |  |
 | ------- |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/manjaycoder/dsa/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0279-perfect-squares](https://github.com/manjaycoder/dsa/tree/master/0279-perfect-squares) |
 <!---LeetCode Topics End-->
