@@ -82,6 +82,7 @@ This course covers the following key topics:
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/manjaycoder/dsa/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0075-sort-colors](https://github.com/manjaycoder/dsa/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/manjaycoder/dsa/tree/master/0088-merge-sorted-array) |
+| [0152-maximum-product-subarray](https://github.com/manjaycoder/dsa/tree/master/0152-maximum-product-subarray) |
 | [0217-contains-duplicate](https://github.com/manjaycoder/dsa/tree/master/0217-contains-duplicate) |
 | [1168-duplicate-zeros](https://github.com/manjaycoder/dsa/tree/master/1168-duplicate-zeros) |
 | [2058-concatenation-of-array](https://github.com/manjaycoder/dsa/tree/master/2058-concatenation-of-array) |
@@ -97,6 +98,7 @@ This course covers the following key topics:
 ## Dynamic Programming
 |  |
 | ------- |
+| [0152-maximum-product-subarray](https://github.com/manjaycoder/dsa/tree/master/0152-maximum-product-subarray) |
 | [0279-perfect-squares](https://github.com/manjaycoder/dsa/tree/master/0279-perfect-squares) |
 | [1013-fibonacci-number](https://github.com/manjaycoder/dsa/tree/master/1013-fibonacci-number) |
 ## Recursion
